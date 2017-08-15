@@ -1,0 +1,8 @@
+<div class="container">
+<h1>{{title}}</h1>
+<h4><i>Pick a demo:</i>
+  <select [selectedIndex]="demo - 1" (change)="selectDemo($event.target.selectedIndex)">
+    <option *ngFor="let demo of demos">{{demo}}</option>
+  </select>
+</h4>
+</div>
